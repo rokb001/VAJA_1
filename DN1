@@ -1,0 +1,34 @@
+Naloga 1:
+n = int(input("Vnesi celo število: "))
+
+print("Vrednost n:", n, "Tip:", type(n))
+n = float(n)
+print("Pretvorjena vrednost n:", n, "Tip:", type(n))
+
+Naloga 2:
+list1 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+list2 = [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+
+rezultat_list = []
+
+for i in range(len(list1)):
+    rezultat_list.append(list1[i] + list2[i])
+  print("Rezultat:", rezultat_list)
+
+Naloga 3:
+prva = int(input("Vnesi prvo celoštevilsko vrednost: "))
+druga = int(input("Vnesi drugo celoštevilsko vrednost: "))
+tretja = int(input("Vnesi tretjo celoštevilsko vrednost: "))
+print("Prva vrednost:", prva, "Tip:", type(prva))
+print("Druga vrednost:", druga, "Tip:", type(druga))
+print("Tretja vrednost:", tretja, "Tip:", type(tretja))
+if druga == prva and tretja <= prva:
+    print("Druga vrednost je enaka prvi in tretja vrednost je manjša ali enaka prvi.")
+
+Naloga 4: 
+def narisipiramido(visina):
+    for i in range(1, visina + 1):
+        zvezdice = "*" * (2 * i - 1)
+        print(zvezdice.center(2 * visina - 1))
+visina_piramide = int(input("Vnesi višino piramide: "))
+narisipiramido(visina_piramide)
