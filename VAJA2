@@ -1,0 +1,40 @@
+@startuml
+left to right direction
+:admin: as admin
+rectangle TV {
+IzbiraVsebine -> TV : Prikaz vsebine
+rectangle RBPI {
+TV -> RBPI : Modul za prikaz vsebine
+
+}
+}
+
+package Družina {
+:Starejsi clani: as starsi
+:Mlajsi clani: as otroci
+}
+
+package ZunanjiDostop {
+:Gosti: as gosti
+}
+
+database IzbiraVsebine {
+usecase "vsa vsebina" as VV
+usecase "starostno omejena vsebina" as SOV
+usecase "omejena vsebina" as OV
+usecase "vsebina za goste" as VG
+}
+usecase "omrežje"
+RBPI -> omrežje : povezava 
+
+:admin: -> IzbiraVsebine : kontrola nad VSO vsebino
+
+:otroci: -> SOV : delno omejena vsebina
+:gosti: -> VG : zelo omejena vsebina
+:starsi: -> VV : neomejena vsebina
+
+
+
+
+
+@enduml
