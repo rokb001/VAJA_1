@@ -1,0 +1,55 @@
+1.
+our_list = ["a", ["bb", "cc"], "d", [["eee"], ["ffff"], "ggg"]]
+f_vrednost = our_list[3][1][0]
+print(f_vrednost)
+
+2.
+our_list = [1, 2, 3, 4, 5, 6, 7]
+our_dict = {
+"a": 2,
+"b": 5,
+"c": 8,
+"d": 12,
+"e": 357,
+"f": 12
+}
+our_tuple = (357, 12, 12, 8, 5, 2, 2)
+removed_value = our_list.pop(4) #odstrani vrednost
+our_dict["d"] = removed_value
+tuple_from_dict = tuple(our_dict.values())
+are_equal = tuple_from_dict == our_tuple
+print("Odstranjena vrednost:", removed_value)
+print("Vse vrednosti iz our_dict:", tuple_from_dict)
+print("Ali sta tuple enaka?", are_equal)
+
+3.
+
+d = {
+"mačka": "Micka",
+"pes": "Fido",
+"volk": "Rex",
+"medved": "Žan",
+"slon": "Jan",
+"žirafa": "Helga",
+"lev": "Gašper",
+"tiger": "Anže",
+"papagaj": "Črt",
+"ribica": "Elena",
+"krokodil": "Kasper",
+"zajec": "Lars",
+"kamela": "Manca"
+}
+keys_with_r = [key for key, value in d.items() if 'r' in value.lower()] #izpise kljuce, ki imajo r ali R
+print("Ključi z vrednostmi, ki vsebujejo črko 'r' ali 'R':", keys_with_r) #izpise rezultat
+
+4.
+def je_prastevilo(n):
+if n > 1:
+for i in range(2, int(n ** 0.5) + 1):
+if n % i == 0:
+return False
+return True
+return False
+prastevila = [x for x in range(1, 51) if je_prastevilo(x)]
+
+print("Praštevila med 1 in 50:", prastevila)
