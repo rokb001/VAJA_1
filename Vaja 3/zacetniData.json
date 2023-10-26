@@ -1,0 +1,14 @@
+zacetniData = {
+    "persons": [
+        {"name": "Alice", "age": 30, "married": True, "employed": True},
+        {"name": "Bob", "age": 40, "married": False, "employed": True},
+        {"name": "Charlie", "age": 25, "married": True, "employed": False},
+        {"name": "David", "age": 32, "married": False, "employed": True},
+        {"name": "Eve", "age": 29, "married": True, "employed": False},
+        {"name": "Fay", "age": 37, "married": False, "employed": True},
+        {"name": "Grace", "age": 45, "married": True, "employed": True},
+        {"name": "Heidi", "age": 31, "married": False, "employed": False},
+        {"name": "Ivy", "age": 21, "married": True, "employed": True},
+        {"name": "Judy", "age": 26, "married": False, "employed": False}
+    ]
+}
