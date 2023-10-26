@@ -1,0 +1,221 @@
+{
+	"info": {
+		"_postman_id": "71ff26bc-32b2-4769-8266-c5f8b3ad61b6",
+		"name": "TP-vaja4-64210024",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30765813"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://vaje.ltfe.org/splet/slika1.jpg",
+					"protocol": "http",
+					"host": [
+						"vaje",
+						"ltfe",
+						"org"
+					],
+					"path": [
+						"splet",
+						"slika1.jpg"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://vaje.ltfe.org/splet/slika1.jpg",
+					"protocol": "http",
+					"host": [
+						"vaje",
+						"ltfe",
+						"org"
+					],
+					"path": [
+						"splet",
+						"slika1.jpg"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://vaje.ltfe.org?zahtevek=zahtevek",
+							"protocol": "http",
+							"host": [
+								"vaje",
+								"ltfe",
+								"org"
+							],
+							"query": [
+								{
+									"key": "zahtevek",
+									"value": "zahtevek"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 26 Oct 2023 10:38:09 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.52 (Ubuntu)"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Content-Length",
+							"value": "168"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "<!DOCTYPE html>\n<html>\n    <body>\n\nSERVER_ADDR: 212.235.185.47\n        <br>SERVER_PORT: 80\n        <br>REMOTE_ADDR: 54.86.50.139\n        <br>HTTP_HOST: vaje.ltfe.org\n        <br>SCRIPT_NAME: /index.php\n        <br>\n    </body>\n</html>"
+				},
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://vaje.ltfe.org?zahtevek=zahtevek",
+							"protocol": "http",
+							"host": [
+								"vaje",
+								"ltfe",
+								"org"
+							],
+							"query": [
+								{
+									"key": "zahtevek",
+									"value": "zahtevek"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "http://vaje.ltfe.org?zahtevek=zahtevek",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://vaje.ltfe.org?zahtevek=zahtevek",
+					"protocol": "http",
+					"host": [
+						"vaje",
+						"ltfe",
+						"org"
+					],
+					"query": [
+						{
+							"key": "zahtevek",
+							"value": "zahtevek"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://postman-echo.com/get?ime=Matevz",
+					"protocol": "https",
+					"host": [
+						"postman-echo",
+						"com"
+					],
+					"path": [
+						"get"
+					],
+					"query": [
+						{
+							"key": "ime",
+							"value": "Matevz"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"priimek\" = \"pustisek\"\r\n}"
+				},
+				"url": {
+					"raw": "https://postman-echo.com/get",
+					"protocol": "https",
+					"host": [
+						"postman-echo",
+						"com"
+					],
+					"path": [
+						"get"
+					],
+					"query": [
+						{
+							"key": "ime",
+							"value": "Matevz",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
