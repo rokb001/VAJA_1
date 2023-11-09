@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "3f9ca358-ed37-44d6-936e-c5791271bb99",
+		"name": "Vaja 5",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30765813"
+	},
+	"item": [
+		{
+			"name": "zahtevek o času",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "GET /misc/time HTTP/1.1\r\nHost: api.rtvslo.si\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/119.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate, br\r\nReferer: https://www.rtvslo.si/\r\nOrigin: https://www.rtvslo.si\r\nSec-Fetch-Dest: empty\r\nSec-Fetch-Mode: cors\r\nSec-Fetch-Site: same-site\r\nConnection: keep-alive"
+				},
+				"url": {
+					"raw": "https://api.rtvslo.si/misc/time",
+					"protocol": "https",
+					"host": [
+						"api",
+						"rtvslo",
+						"si"
+					],
+					"path": [
+						"misc",
+						"time"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "zahtevek o avtih",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://api.rtvslo.si/poll/getPollById?client_id=8c5205a95060a482f0fc96b9162d9e3f&id=8129",
+					"protocol": "http",
+					"host": [
+						"api",
+						"rtvslo",
+						"si"
+					],
+					"path": [
+						"poll",
+						"getPollById"
+					],
+					"query": [
+						{
+							"key": "client_id",
+							"value": "8c5205a95060a482f0fc96b9162d9e3f"
+						},
+						{
+							"key": "id",
+							"value": "8129"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "zahtevek o novicah",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://api.rtvslo.si/news/getSection?client_id=8c5205a95060a482f0fc96b9162d9e3f&id=12",
+					"protocol": "http",
+					"host": [
+						"api",
+						"rtvslo",
+						"si"
+					],
+					"path": [
+						"news",
+						"getSection"
+					],
+					"query": [
+						{
+							"key": "client_id",
+							"value": "8c5205a95060a482f0fc96b9162d9e3f"
+						},
+						{
+							"key": "id",
+							"value": "12"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "zahtevek za raiting",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://api.rtvslo.si/news/setRating/12?vote_user=4&client_id=8c5205a95060a482f0fc96b9162d9e3f&language=sl",
+					"protocol": "http",
+					"host": [
+						"api",
+						"rtvslo",
+						"si"
+					],
+					"path": [
+						"news",
+						"setRating",
+						"12"
+					],
+					"query": [
+						{
+							"key": "vote_user",
+							"value": "4"
+						},
+						{
+							"key": "client_id",
+							"value": "8c5205a95060a482f0fc96b9162d9e3f"
+						},
+						{
+							"key": "language",
+							"value": "sl"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2 naloga pridobitev bloka",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"eth_blockNumber\",\r\n    \"params\": [],\r\n    \"id\": 0\r\n}"
+				},
+				"url": {
+					"raw": "https://mainnet.infura.io/v3/8891db36a05f485486fd7979445d5611",
+					"protocol": "https",
+					"host": [
+						"mainnet",
+						"infura",
+						"io"
+					],
+					"path": [
+						"v3",
+						"8891db36a05f485486fd7979445d5611"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
